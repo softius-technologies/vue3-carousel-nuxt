@@ -6540,7 +6540,7 @@ vue-tsc@^2.0.26, vue-tsc@>=2.0.0:
     "@vue/server-renderer" "3.5.12"
     "@vue/shared" "3.5.12"
 
-"vue3-carousel@github:softius-technologies/vue3-carousel#new-branch":
+"vue3-carousel@github:softius-technologies/vue3-carousel#v0.5.2":
   version "0.3.5"
   resolved "git+ssh://git@github.com/softius-technologies/vue3-carousel.git#c8a554b665a73fb2b9a772c98e9ae3f2fc097fc2"
 
