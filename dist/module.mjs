@@ -1,23 +1,12 @@
-import { defineNuxtModule, addComponent } from '@nuxt/kit';
+import jiti from "file:///var/www/Forks/vue3-carousel-nuxt/node_modules/jiti/lib/index.js";
 
-const module = defineNuxtModule({
-  meta: {
-    name: "vue3-carousel-nuxt",
-    compatibility: {
-      nuxt: ">=3.0.0"
-    }
-  },
-  setup(options, nuxt) {
-    const prefix = options.prefix || nuxt.options.carousel?.prefix || "";
-    ["Carousel", "Slide", "Pagination", "Navigation"].map((c) => ({
-      name: `${prefix}${c}`,
-      filePath: "vue3-carousel/dist/carousel",
-      export: c
-    })).forEach((c) => {
-      addComponent(c);
-    });
-    nuxt.options.css.unshift("vue3-carousel/dist/carousel.css");
+/** @type {import("/var/www/Forks/vue3-carousel-nuxt/src/module")} */
+const _module = jiti(null, {
+  "esmResolve": true,
+  "interopDefault": true,
+  "alias": {
+    "vue3-carousel-nuxt": "/var/www/Forks/vue3-carousel-nuxt"
   }
-});
+})("/var/www/Forks/vue3-carousel-nuxt/src/module.ts");
 
-export { module as default };
+export default _module;
