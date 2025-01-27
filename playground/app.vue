@@ -16,6 +16,9 @@
   </CCarousel>
 </template>
 
+<script setup>
+</script>
+
 <style>
 .carousel__item {
   background-color: rgb(134, 239, 172);
